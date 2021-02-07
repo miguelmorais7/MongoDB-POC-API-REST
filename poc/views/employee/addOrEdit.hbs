@@ -1,0 +1,190 @@
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="img--wrapper">
+            <img src="./assets/oxiteno-logo.png" alt="">
+        </div>
+
+        <div class="logout">
+            <a href="#">Sair <i class="fas fa-sign-out-alt"></i></a>
+        </div>
+
+
+    </div>
+    <!----------->
+
+    <!--Body-->
+    <div class="container-centro">
+        <div class="servicos--display">
+            <div class="grid-container" id="grid">
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="1">
+                    <div class="card" id="card">
+                            <i class="fas fa-utensils"></i> Restaurante
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="2">
+                    <div class="card" id="card">
+                        <i class="fas fa-broom"></i> Limpeza
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="3">
+                    <div class="card" id="card">
+                        <i class="fas fa-tree"></i>Jardinagem
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="4">
+                    <div class="card" id="card">
+                        <i class="fas fa-shield-alt"></i> Segurança Patrimonial
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="5">
+                    <div class="card" id="card">
+                            <i class="fas fa-desktop"></i> Recepção
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="6">
+                    <div class="card" id="card">
+                        <i class="fas fa-envelope"></i> Malote / Correspondências
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="7">
+                    <div class="card" id="card">
+                        <i class="fas fa-bug"></i> Controle de Pragas
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="8">
+                    <div class="card" id="card">
+                        <i class="fas fa-cookie-bite"></i> Máquina de Snacks
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="9">
+                    <div class="card" id="card">
+                        <i class="fas fa-coffee"></i> Máquina de Bebidas Quentes
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="10">
+                    <div class="card" id="card">
+                        <i class="fas fa-parking"></i> Estacionamento
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="11">
+                    <div class="card" id="card">
+                        <i class="fas fa-exchange-alt"></i> Transporte de Turno
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="12">
+                    <div class="card" id="card">
+                        <i class="fas fa-id-card"></i> Transporte Administrativo
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="13">
+                    <div class="card" id="card">
+                        <i class="fas fa-car-side"></i> Frota de Veículos - Pool
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="14">
+                    <div class="card" id="card">
+                        <i class="fas fa-university"></i> PAB - Itaú
+                    </div>
+                </a>
+
+                <a href="#" onclick="Modal.open()" class="linkOption" data-value="15">
+                    <div class="card" id="card">
+                        <i class="fas fa-arrow-up"></i> Elevador P&D
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- <div class="form--display" style="display: none;">
+            <h1>teste</h1>
+            <button id="voltar">Voltar </button>
+            <form action="" name="formA">
+
+            </form>
+        </div> -->
+
+        <div class="modal-form">
+            <div class="modal-form--box">
+                <form name="form" method="POST" action="https://api.staticforms.xyz/submit">
+                    <input type="hidden" name="accessKey" value="b09e7c3f-9f34-47cc-aef1-651dbf49ed7a">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html">
+
+                    <div class="form-nome">
+                        <h2>Nome aqui</h2>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email: </label>
+                        <input type="email" class="form-estilo" name="e-mail" id="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="titulo">Título: </label>
+                        <select name="subject" class="form-estilo" id="titulo">
+                            
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                    <label for="local">Local: </label>
+                        <select name="localicao" class="form-estilo" id="local" required>
+                            <option value=""></option>
+                            <option value="predio">Prédio</option>
+                            <option value="sedecampinas">CSC Sede Campinas</option>
+                            <option value="ernestoigel">Ed.Ernesto Igel</option>
+                            <option value="margaridaigel">Ed. Margarida Igel</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                    <label for="andar">Andar: </label>
+                        <select name="andar" class="form-estilo" id="andar" required>
+                            <option value=""></option>
+                            <option value="T">Térreo</option>
+                            <option value="1">1º andar</option>
+                            <option value="2">2º andar</option>
+                            <option value="3">3º andar</option>
+                            <option value="4">4º andar</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label id="lbl-chamado" for="chamado">Digite aqui: </label>
+                        <textarea name="chamado" id="chamado" class="form-estilo" cols="20" rows="3" required></textarea>
+                    </div>
+
+
+
+                    <div class="botoes">
+                        <button class="btn-form" id="btn-cancel" onclick="Modal.close()">Cancelar</button>
+
+
+
+                        <button class="btn-form" id="btn-enviar"  onclick="return validador()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <footer>
+            <p>&copy; Projeto Oxiteno</p>
+        </footer>
+    </div>
+</body>
